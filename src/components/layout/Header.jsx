@@ -8,7 +8,7 @@ export default function Header () {
     const[menu, setMenu]= useState(false);
   return (
     <div className='relative py-3 border-b-2 border-orange-500'>
-        <div className='container mx-auto px-4 md:px-6 lg:px-8 xl:px-0 flex flex-row items-center justify-between gap-4'>
+        <div className='container mx-auto px-4 md:px-6 lg:px-8 xl:px-2 flex flex-row items-center justify-between gap-4'>
             <Image src="/images/Hlogo.png" alt="logo" width={250} height={120} className='hidden md:block w-[180px] lg:w-[210px] xl:w-[250px] h-auto shrink-0'/>
             <Image src="/images/Hlogo.png" alt="logo" width={120} height={60} className='block md:hidden w-[120px] h-auto shrink-0'/>
             <div className='hidden lg:flex flex-row items-center justify-between gap-3 xl:gap-10 text-sm xl:text-base'>

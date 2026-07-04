@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function HeroBanner () {
   return (
@@ -11,13 +12,15 @@ export default function HeroBanner () {
         <Image src="/images/Banner2.jpg" alt="banner1" width={250} height={180} className="hidden md:block lg:hidden xl:hidden absolute top-0 right-0 rounded-bl-full"/>
         <Image src="/images/Banner2.jpg" alt="banner1" width={100} height={80} className="block md:hidden lg:hidden xl:hidden absolute top-0 right-0 rounded-bl-full"/>
         <div className='absolute inset-0 container mx-auto px-4 md:px-4 lg:px-10 xl:px-0 flex items-center'>
-          <div className='flex w-[145px] sm:w-[220px] md:w-[420px] lg:w-[520px] xl:w-[520px] flex-col items-start gap-2 sm:gap-3 md:gap-4 lg:gap-5'>
+          <div className='flex w-[145px] sm:w-[220px] md:w-[420px] lg:w-[520px] xl:w-[520px] flex-col items-start gap-2 sm:gap-3 md:gap-4 lg:gap-5 px-4'>
             <p className='w-full text-[8px] sm:text-xs md:text-xl lg:text-3xl xl:text-5xl leading-tight text-black'>
               Our <b className='text-orange-400'>Vision</b> is to build<br/> an inclusive society<br/> where every person<br/> with a disability can<br/> live with <b className='text-orange-400'>confidence</b>
             </p>
-            <button className='block bg-orange-400 hover:bg-orange-500 rounded text-white text-[10px] sm:text-xs md:text-base lg:text-lg px-2 sm:px-3 lg:px-4 py-1 lg:py-2 max-w-fit'>
-              Read More
-            </button>
+            <Link href="/aboutUs">
+              <button className='block bg-orange-400 hover:bg-orange-500 rounded text-white text-[10px] sm:text-xs md:text-base lg:text-lg px-2 sm:px-3 lg:px-4 py-1 lg:py-2 max-w-fit'>
+                  Read More
+              </button>
+            </Link>
           </div>
         </div>
     </div>

@@ -13,11 +13,11 @@ export default function Footer () {
         </div>
         <div className='flex w-full max-w-56 flex-col items-center justify-start text-center text-base sm:items-start sm:text-left sm:pt-14 lg:pl-10 xl:pl-16'>
             <h1 className='mb-2 text-black font-bold'>Quick Links</h1>
-            <Link href="" className='text-neutral-500 hover:underline'>Home</Link>
-            <Link href="" className='text-neutral-500 hover:underline'>About Us</Link>
-            <Link href="" className='text-neutral-500 hover:underline'>Services</Link>
-            <Link href="" className='text-neutral-500 hover:underline'>Our Impact</Link>
-            <Link href="" className='text-neutral-500 hover:underline'>Resources</Link>
+            <Link href="/" className='text-neutral-500 hover:underline'>Home</Link>
+            <Link href="/aboutUs" className='text-neutral-500 hover:underline'>About Us</Link>
+            <Link href="/services" className='text-neutral-500 hover:underline'>Services</Link>
+            <Link href="/impact" className='text-neutral-500 hover:underline'>Our Impact</Link>
+            <Link href="/resources" className='text-neutral-500 hover:underline'>Resources</Link>
         </div>
         <div className='flex w-full max-w-64 flex-col items-center justify-start text-center text-base sm:items-start sm:text-left sm:pt-14'>
             <h1 className='mb-2 text-black font-bold'>Our Programs</h1>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { CircleCheck } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function AboutUs () {
   return (
@@ -18,23 +19,25 @@ export default function AboutUs () {
             </div>
             <div className='flex flex-row items-center gap-2'>
                 <CircleCheck color="#e25f18" size={20}/>
-                <p className='text-base md:text-lg text-neutral-500'>Promoting inclusion and positive representation</p>
+                <p className='text-base md:text-lg text-neutral-500'>Support education, employment, and entrepreneurship opportunities</p>
             </div>
             <div className='flex flex-row items-center gap-2'>
                 <CircleCheck color="#e25f18" size={20}/>
-                <p className='text-base md:text-lg text-neutral-500'>Promoting inclusion and positive representation</p>
+                <p className='text-base md:text-lg text-neutral-500'>Encourage accessibility and inclusive environments</p>
             </div>
             <div className='flex flex-row items-center gap-2'>
                 <CircleCheck color="#e25f18" size={20}/>
-                <p className='text-base md:text-lg text-neutral-500'>Promoting inclusion and positive representation</p>
+                <p className='text-base md:text-lg text-neutral-500'>Advocate for equal rights, independence, and social inclusion</p>
             </div>
             <div className='flex flex-row items-center gap-2 pb-5'>
                 <CircleCheck color="#e25f18" size={20}/>
-                <p className='text-base md:text-lg text-neutral-500'>Promoting inclusion and positive representation</p>
+                <p className='text-base md:text-lg text-neutral-500'>Foster optimism, confidence, and self-belief among people with disabilities</p>
             </div>
-            <button className='px-3 py-2 w-fit bg-orange-400 hover:bg-orange-500 rounded text-white'>
-                Learn More About Us
-            </button>
+            <Link href="/aboutUs">
+                <button className='px-3 py-2 w-fit bg-orange-400 hover:bg-orange-500 rounded text-white'>
+                    Learn More About Us
+                </button>
+            </Link>
         </div>
         <Image src="/images/facebook-optimum-01-06-26.jpg.jpeg" alt="empower" width={900} height={250} className='hidden md:hidden lg:hidden xl:block rounded shadow-xl'/>
     </div>
