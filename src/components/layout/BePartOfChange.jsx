@@ -1,5 +1,6 @@
 import React from 'react'
 import { HandCoins, Heart, UsersRound, MoveRight } from 'lucide-react';
+import Link from 'next/link';
 
 
 export default function BePartOfChange () {
@@ -15,18 +16,24 @@ export default function BePartOfChange () {
             </div>
         </div>
         <div className='relative z-10 flex flex-col sm:flex-row lg:flex-row items-center justify-center gap-4 md:gap-5 lg:gap-6'>
-            <button className='flex w-full sm:w-auto flex-row items-center justify-center gap-2 border-2 border-white px-4 py-3 rounded-lg'>
-                <Heart size={25}/>
-                Donate Now
-            </button>
-            <button className='flex w-full sm:w-auto flex-row items-center justify-center gap-2 border-2 border-white px-4 py-3 rounded-lg'>
-                <UsersRound size={25}/>
-                Volunteer
-            </button>
-            <button className='flex w-full sm:w-auto flex-row items-center justify-center gap-2 border-2 border-white px-4 py-3 rounded-lg'>
-                <MoveRight size={25}/>
-                Join Us
-            </button>
+            <Link href="/joinUs">
+                <button className='flex w-full sm:w-auto flex-row items-center justify-center gap-2 border-2 border-white px-4 py-3 rounded-lg'>
+                    <Heart size={25}/>
+                    Donate Now
+                    </button>
+            </Link>
+            <Link href="/joinUs">
+                <button className='flex w-full sm:w-auto flex-row items-center justify-center gap-2 border-2 border-white px-4 py-3 rounded-lg'>
+                    <UsersRound size={25}/>
+                    Volunteer
+                </button>
+            </Link>
+            <Link href="/joinUs">
+                <button className='flex w-full sm:w-auto flex-row items-center justify-center gap-2 border-2 border-white px-4 py-3 rounded-lg'>
+                    <MoveRight size={25}/>
+                    Join Us
+                </button>
+            </Link>
         </div>
     </div>
   )

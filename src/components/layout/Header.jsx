@@ -18,9 +18,11 @@ export default function Header () {
                 <Link href="/impact" className='text-neutral-600 px-2 py-1 rounded hover:text-orange-500 hover:bg-orange-100'>Our Impact</Link>
                 <Link href="/resources" className='text-neutral-600 px-2 py-1 rounded hover:text-orange-500 hover:bg-orange-100'>Resources</Link>
             </div>
-            <button className='hidden lg:block px-3 xl:px-4 py-2 bg-orange-400 hover:bg-orange-500 rounded text-white text-sm xl:text-base shrink-0'>
-                Join Us
-            </button>
+            <Link href="/joinUs">
+                <button className='hidden lg:block px-3 xl:px-4 py-2 bg-orange-400 hover:bg-orange-500 rounded text-white text-sm xl:text-base shrink-0'>
+                    Join Us
+                </button>
+            </Link>
             <button className='block lg:hidden p-1' onClick={()=>setMenu(!menu)} aria-label="Toggle menu">
                 <Menu color="#ed832c" size={25}/>
             </button>
@@ -31,9 +33,11 @@ export default function Header () {
                     <Link href="/services" className='text-neutral-500 px-3 py-1 bg-gray-200 w-full'>Services</Link>
                     <Link href="/impact" className='text-neutral-500 px-3 py-1'>Our Impact</Link>
                     <Link href="/resources" className='text-neutral-500 px-3 py-1 bg-gray-200 w-full'>Resources</Link>
-                    <button className='px-3 py-2 w-full border rounded border-orange-400 bg-orange-400 hover:bg-white text-white hover:text-orange-500'>
-                        Join Us
-                    </button>
+                    <Link href="/joinUs">
+                        <button className='px-3 py-2 w-full border rounded border-orange-400 bg-orange-400 hover:bg-white text-white hover:text-orange-500'>
+                            Join Us
+                        </button>
+                    </Link>
                 </div>
             )}
         </div>

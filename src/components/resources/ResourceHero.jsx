@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { MoveRight } from 'lucide-react'
+import Link from 'next/link'
 
 export default function ResourceHero () {
   return (
@@ -28,10 +29,12 @@ export default function ResourceHero () {
               Explore Resources
               <MoveRight size={22} />
             </button>
-            <button className='flex items-center justify-center gap-4 rounded-lg border-2 border-orange-300 px-7 py-4 font-bold text-neutral-900 hover:bg-orange-300 w-fit'>
-              Get Support
-              <MoveRight className='text-orange-500' size={22} />
-            </button>
+            <Link href="/joinUs">
+              <button className='flex items-center justify-center gap-4 rounded-lg border-2 border-orange-300 px-7 py-4 font-bold text-neutral-900 hover:bg-orange-300 w-fit'>
+                Get Support
+                <MoveRight className='text-orange-500' size={22} />
+              </button>
+            </Link>
           </div>
         </div>
 

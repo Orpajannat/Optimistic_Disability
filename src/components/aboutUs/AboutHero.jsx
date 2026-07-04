@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { MoveRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function AboutHero () {
   return (
@@ -15,10 +16,12 @@ export default function AboutHero () {
                     Our Programs
                     <MoveRight size={20}/>
                 </button>
-                <button className='flex flex-row items-center gap-2 px-4 py-3 border-2 border-orange-400 hover:border-white hover:bg-orange-300 rounded-lg text-black hover:text-white'>
-                    Get Involved
-                    <MoveRight color="#f46b10" size={20}/>
-                </button>
+                <Link href="/joinUs">
+                    <button className='flex flex-row items-center gap-2 px-4 py-3 border-2 border-orange-400 hover:border-white hover:bg-orange-300 rounded-lg text-black hover:text-white'>
+                        Get Involved
+                        <MoveRight color="#f46b10" size={20}/>
+                    </button>
+                </Link>
             </div>
         </div>
         <div className='relative aspect-8/5 w-full max-w-160 shrink-0 lg:w-[52vw]'>

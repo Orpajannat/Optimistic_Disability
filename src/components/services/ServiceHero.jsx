@@ -1,6 +1,7 @@
 import React from 'react'
 import { Flower, MoveRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ServiceHero () {
   return (
@@ -24,10 +25,12 @@ export default function ServiceHero () {
                         Explore Programs
                         <MoveRight size={20}/>
                     </button>
-                    <button className='flex flex-row items-center gap-2 px-4 py-3 border-2 border-orange-400 hover:border-white hover:bg-orange-300 rounded-lg text-black hover:text-white text-sm md:text-base'>
+                    <Link href="/joinUs">
+                      <button className='flex flex-row items-center gap-2 px-4 py-3 border-2 border-orange-400 hover:border-white hover:bg-orange-300 rounded-lg text-black hover:text-white text-sm md:text-base'>
                         Get Support
                         <MoveRight size={20}/>
-                    </button>
+                      </button>
+                    </Link>
                 </div>
             </div>
         </div>

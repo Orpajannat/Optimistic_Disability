@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function OurFocusAreas () {
@@ -16,9 +17,11 @@ export default function OurFocusAreas () {
                             protective circular shape to represent the core<br/>
                             values of empowerment, inclusion, and support.
                         </p>
-                        <button className='px-3 py-2 bg-orange-400 hover:border-2 hover:border-orange-400 hover:bg-white rounded text-white hover:text-orange-500'>
+                        <Link href="/services">
+                          <button className='px-3 py-2 bg-orange-400 hover:border-2 hover:border-orange-400 hover:bg-white rounded text-white hover:text-orange-500'>
                             Read More
-                        </button>
+                          </button>
+                        </Link>
                     </div>
                 </div>
                 <div className='flex w-full lg:w-1/2 xl:w-auto flex-row items-center justify-center'>
@@ -32,9 +35,11 @@ export default function OurFocusAreas () {
                             brighter opportunities. 
 
                         </p>
-                        <button className='px-3 py-2 bg-orange-400 hover:border-2 hover:border-orange-400 hover:bg-white rounded text-white hover:text-orange-500'>
+                        <Link href="/services">
+                          <button className='px-3 py-2 bg-orange-400 hover:border-2 hover:border-orange-400 hover:bg-white rounded text-white hover:text-orange-500'>
                             Read More
-                        </button>
+                          </button>
+                        </Link>
                     </div>
                 </div>
             </div>
