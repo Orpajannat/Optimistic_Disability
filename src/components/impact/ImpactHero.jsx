@@ -20,10 +20,12 @@ export default function ImpactHero () {
             Every story shows the power of inclusion.
           </p>
           <div className='mt-10 flex flex-col gap-4 sm:flex-row'>
-            <button className='flex items-center justify-center gap-4 rounded-lg bg-orange-500 px-7 py-4 font-bold text-white hover:bg-orange-300 w-fit'>
-              See Our Programs
-              <MoveRight size={22} />
-            </button>
+            <Link href="/explorePrograms">
+              <button className='flex items-center justify-center gap-4 rounded-lg bg-orange-500 px-7 py-4 font-bold text-white hover:bg-orange-300 w-fit'>
+                See Our Programs
+                <MoveRight size={22} />
+              </button>
+            </Link>  
             <Link href="/joinUs">
               <button className='flex items-center justify-center gap-4 rounded-lg border-2 border-orange-300 px-7 py-4 font-bold text-neutral-900 hover:bg-orange-300 w-fit'>
                 Get Involved

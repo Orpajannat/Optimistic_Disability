@@ -1,3 +1,4 @@
+import Program from '@/components/buttons/explorePrograms/Program'
 import React from 'react'
 import {
   Accessibility,
@@ -10,9 +11,8 @@ import {
   Sparkles,
   UsersRound,
 } from 'lucide-react'
-import Link from 'next/link'
 
-const services = [
+const programs = [
   {
     title: 'Disability Awareness',
     description: 'We create awareness and promote positive attitudes towards disability inclusion and equal rights.',
@@ -71,37 +71,13 @@ const services = [
   },
 ]
 
-export default function OurServices () {
-  return (
-    <section className='py-12 md:py-16 lg:py-20'>
-      <div className='container mx-auto px-4 md:px-6 lg:px-8 xl:px-4'>
-        <div className='flex flex-col items-center text-center gap-3'>
-          <p className='text-xs md:text-sm font-bold uppercase text-orange-500'>What We Offer</p>
-          <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900'>Our Services</h2>
-          <p className='max-w-[760px] text-sm md:text-base lg:text-lg leading-relaxed text-neutral-600'>
-            We offer a wide range of services designed to remove barriers, create opportunities,
-            and empower individuals with disabilities to thrive in every aspect of life.
-          </p>
-        </div>
+export default async function page ({params}) {
+    const { slug } = await params
 
-        <div className='mt-8 md:mt-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 md:gap-6'>
-          {services.map((service, index) => (
-            <div key={index} className='min-h-[280px] md:min-h-[300px] flex flex-col items-center justify-center text-center gap-4 rounded-lg border border-neutral-200 bg-white px-5 py-8 shadow-sm'>
-              <div className={`flex h-20 w-20 md:h-24 md:w-24 items-center justify-center rounded-full ${service.bg}`}>
-                {service.icon}
-              </div>
-              <h3 className='text-lg md:text-xl font-bold text-neutral-900'>{service.title}</h3>
-              <p className='max-w-[230px] text-sm md:text-base leading-relaxed text-neutral-600'>{service.description}</p>
-              <Link href="/explorePrograms">
-                <button className='mt-auto flex items-center gap-2 text-sm md:text-base font-bold text-orange-500 hover:text-orange-600'>
-                  Learn More
-                  <ArrowRight size={18} />
-                </button>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+   const program = programs.find(p => p.slug === slug)
+  return (
+    <div>
+        <Program program={program}/>
+    </div>
   )
 }

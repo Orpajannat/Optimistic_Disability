@@ -21,10 +21,12 @@ export default function ServiceHero () {
                 </div>
                 <p className='text-sm md:text-base text-neutral-500 leading-relaxed'>We provide practical support and meaningful programs that help persons with<br className='hidden md:block'/> disabilities live independently, with dignity, confidence, and equal opportunities.</p>
                 <div className='flex flex-col sm:flex-row items-start sm:items-center gap-3 md:gap-6 lg:gap-10'>
-                    <button className='flex flex-row items-center gap-2 px-4 py-3 bg-orange-500 hover:bg-orange-300 rounded-lg text-white text-sm md:text-base'>
+                    <Link href="/explorePrograms">
+                      <button className='flex flex-row items-center gap-2 px-4 py-3 bg-orange-500 hover:bg-orange-300 rounded-lg text-white text-sm md:text-base'>
                         Explore Programs
                         <MoveRight size={20}/>
-                    </button>
+                      </button>
+                    </Link>
                     <Link href="/joinUs">
                       <button className='flex flex-row items-center gap-2 px-4 py-3 border-2 border-orange-400 hover:border-white hover:bg-orange-300 rounded-lg text-black hover:text-white text-sm md:text-base'>
                         Get Support

@@ -12,10 +12,12 @@ export default function AboutHero () {
             <p className='text-orange-500 text-2xl md:text-3xl lg:text-5xl font-bold pb-4'>Creating Opportunities.</p>
             <p className='text-base text-neutral-500'>Together we&apos;re building an inclusive future where<br/> everyone can participate with dignity and confidence.</p>
             <div className='flex flex-row flex-wrap gap-4 pt-5 sm:gap-10'>
-                <button className='flex flex-row items-center gap-2 px-4 py-3 bg-orange-500 hover:bg-orange-300 rounded-lg text-white'>
+                <Link href="/explorePrograms">
+                  <button className='flex flex-row items-center gap-2 px-4 py-3 bg-orange-500 hover:bg-orange-300 rounded-lg text-white'>
                     Our Programs
                     <MoveRight size={20}/>
-                </button>
+                  </button>
+                </Link>
                 <Link href="/joinUs">
                     <button className='flex flex-row items-center gap-2 px-4 py-3 border-2 border-orange-400 hover:border-white hover:bg-orange-300 rounded-lg text-black hover:text-white'>
                         Get Involved

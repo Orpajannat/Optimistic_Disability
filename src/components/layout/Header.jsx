@@ -23,11 +23,11 @@ export default function Header () {
                     Join Us
                 </button>
             </Link>
-            <button className='block lg:hidden p-1' onClick={()=>setMenu(!menu)} aria-label="Toggle menu">
+            <button className='block lg:hidden p-1' onClick={()=>setMenu(!menu)}>
                 <Menu color="#ed832c" size={25}/>
             </button>
             {menu&&(
-                <div className='absolute z-50 top-full right-4 mt-3 w-48 max-h-fit border rounded bg-white flex flex-col items-start overflow-hidden'>
+                <div className='absolute z-50 top-full right-4 mt-3 w-48 max-h-fit border rounded bg-white flex flex-col items-start overflow-hidden block lg:hidden'>
                     <Link href="/" className='text-neutral-500 px-3 py-1 bg-gray-200 w-full'>Home</Link>
                     <Link href="/aboutUs" className='text-neutral-500 px-3 py-1'>About Us</Link>
                     <Link href="/services" className='text-neutral-500 px-3 py-1 bg-gray-200 w-full'>Services</Link>

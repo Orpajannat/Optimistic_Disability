@@ -25,10 +25,12 @@ export default function ResourceHero () {
             caregivers, and communities.
           </p>
           <div className='mt-10 flex flex-col gap-4 sm:flex-row'>
-            <button className='flex items-center justify-center gap-4 rounded-lg bg-orange-500 px-7 py-4 font-bold text-white hover:bg-orange-300 w-fit'>
-              Explore Resources
-              <MoveRight size={22} />
-            </button>
+            <Link href="/viewResources">
+              <button className='flex items-center justify-center gap-4 rounded-lg bg-orange-500 px-7 py-4 font-bold text-white hover:bg-orange-300 w-fit'>
+                Explore Resources
+                <MoveRight size={22} />
+              </button>
+            </Link>
             <Link href="/joinUs">
               <button className='flex items-center justify-center gap-4 rounded-lg border-2 border-orange-300 px-7 py-4 font-bold text-neutral-900 hover:bg-orange-300 w-fit'>
                 Get Support

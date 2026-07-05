@@ -12,7 +12,8 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 
-const services = [
+export default function Programs () {
+    const programs = [
   {
     title: 'Disability Awareness',
     description: 'We create awareness and promote positive attitudes towards disability inclusion and equal rights.',
@@ -70,29 +71,17 @@ const services = [
     slug:"8"
   },
 ]
-
-export default function OurServices () {
   return (
-    <section className='py-12 md:py-16 lg:py-20'>
-      <div className='container mx-auto px-4 md:px-6 lg:px-8 xl:px-4'>
-        <div className='flex flex-col items-center text-center gap-3'>
-          <p className='text-xs md:text-sm font-bold uppercase text-orange-500'>What We Offer</p>
-          <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900'>Our Services</h2>
-          <p className='max-w-[760px] text-sm md:text-base lg:text-lg leading-relaxed text-neutral-600'>
-            We offer a wide range of services designed to remove barriers, create opportunities,
-            and empower individuals with disabilities to thrive in every aspect of life.
-          </p>
-        </div>
-
-        <div className='mt-8 md:mt-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 md:gap-6'>
-          {services.map((service, index) => (
+    <div className='py-12 md:py-16 lg:py-20 bg-orange-100/30'>
+        <div className='mt-8 md:mt-10 grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-6 px-4'>
+          {programs.map((program, index) => (
             <div key={index} className='min-h-[280px] md:min-h-[300px] flex flex-col items-center justify-center text-center gap-4 rounded-lg border border-neutral-200 bg-white px-5 py-8 shadow-sm'>
-              <div className={`flex h-20 w-20 md:h-24 md:w-24 items-center justify-center rounded-full ${service.bg}`}>
-                {service.icon}
+              <div className={`flex h-20 w-20 md:h-24 md:w-24 items-center justify-center rounded-full ${program.bg}`}>
+                {program.icon}
               </div>
-              <h3 className='text-lg md:text-xl font-bold text-neutral-900'>{service.title}</h3>
-              <p className='max-w-[230px] text-sm md:text-base leading-relaxed text-neutral-600'>{service.description}</p>
-              <Link href="/explorePrograms">
+              <h3 className='text-lg md:text-xl font-bold text-neutral-900'>{program.title}</h3>
+              <p className='max-w-[230px] text-sm md:text-base leading-relaxed text-neutral-600'>{program.description}</p>
+              <Link href={`/explorePrograms/${program.slug}`}>
                 <button className='mt-auto flex items-center gap-2 text-sm md:text-base font-bold text-orange-500 hover:text-orange-600'>
                   Learn More
                   <ArrowRight size={18} />
@@ -101,7 +90,6 @@ export default function OurServices () {
             </div>
           ))}
         </div>
-      </div>
-    </section>
+    </div>
   )
 }

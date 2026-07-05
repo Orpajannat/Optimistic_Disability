@@ -62,7 +62,7 @@ const impactNumbers = [
 export default function ImpactInNumbers () {
   return (
     <section className='bg-white py-12 md:py-16 lg:py-20'>
-      <div className='container mx-auto px-4 md:px-6 lg:px-8 xl:px-0'>
+      <div className='container mx-auto px-4 md:px-6 lg:px-8 xl:px-4'>
         <div className='flex flex-col items-center text-center gap-3'>
           <p className='text-xs md:text-sm font-bold uppercase text-orange-500'>Our Impact In Numbers</p>
           <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-900'>Making a Measurable Difference</h2>
