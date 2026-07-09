@@ -54,11 +54,11 @@ import Link from 'next/link'
 
 export default function OurFocusAreas() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-orange-50/20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+    <section className="py-14 sm:py-16 md:py-24 bg-gradient-to-b from-slate-50 to-orange-50/20 overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         
         {/* Section Heading */}
-        <div className="text-center space-y-3 mb-12 md:mb-16">
+        <div className="text-center space-y-3 mb-10 sm:mb-12 md:mb-16 max-w-3xl mx-auto">
           <h2 className="text-xs font-bold tracking-widest text-[#f37421] uppercase">
             Core Framework
           </h2>
@@ -69,16 +69,16 @@ export default function OurFocusAreas() {
         </div>
 
         {/* Feature Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 max-w-5xl mx-auto items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-stretch">
           
           {/* Card 1: Empowerment */}
-          <div className="group flex flex-col items-center bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            <div className="flex items-center justify-center bg-orange-50/60 rounded-xl p-4 mb-6 w-full max-w-[320px] aspect-[4/3] relative">
+          <div className="group lg:col-span-6 flex h-full flex-col items-center bg-white rounded-lg border border-slate-100 p-6 sm:p-8 lg:p-10 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div className="relative mb-6 flex w-full max-w-[360px] sm:max-w-[420px] lg:max-w-[460px] aspect-[4/3] items-center justify-center p-3 sm:p-4">
               <Image 
-                src="/images/Human_Figure_with_Circle.png" 
+                src="/images/Human_figure1.png" 
                 alt="Empowerment icon displaying human figure within a community circle" 
                 fill
-                sizes="(max-width: 1024px) 280px, 320px"
+                sizes="(max-width: 640px) 90vw, (max-width: 1024px) 420px, 38vw"
                 className="object-contain p-2 transform group-hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -88,14 +88,14 @@ export default function OurFocusAreas() {
                 Empowerment
               </h3>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-md">
-                This symbol combines a human figure and a protective circular shape to represent the core values of empowerment, inclusion, and support[cite: 1].
+                This symbol combines a human figure and a protective circular shape to represent the core values of empowerment, inclusion, and support.
               </p>
             </div>
 
-            <div className="pt-8 w-full">
+            <div className="pt-8 w-full sm:w-auto">
               <Link 
                 href="/services" 
-                className="inline-flex w-full items-center justify-center bg-[#f37421] hover:bg-[#f68c1f] text-white font-medium text-sm sm:text-base px-6 py-3 rounded-xl transition-colors duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#f37421] focus:ring-offset-2"
+                className="inline-flex w-full sm:w-auto items-center justify-center bg-[#f37421] hover:bg-[#f68c1f] text-white font-medium text-sm sm:text-base px-6 py-3 rounded-lg transition-colors duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#f37421] focus:ring-offset-2"
               >
                 Read More
               </Link>
@@ -103,13 +103,13 @@ export default function OurFocusAreas() {
           </div>
 
           {/* Card 2: Brighter Opportunities */}
-          <div className="group flex flex-col items-center bg-white rounded-2xl border border-slate-100 p-8 md:p-10 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            <div className="flex items-center justify-center bg-amber-50/40 rounded-xl p-4 mb-6 w-full max-w-[320px] aspect-[4/3] relative">
+          <div className="group lg:col-span-6 flex h-full flex-col items-center bg-white rounded-lg border border-slate-100 p-6 sm:p-8 lg:p-10 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div className="relative mb-6 flex w-full max-w-[360px] sm:max-w-[420px] lg:max-w-[460px] aspect-[4/3] items-center justify-center bg-amber-50/40 rounded-lg p-3 sm:p-4">
               <Image 
-                src="/images/Sun_Rays.png" 
+                src="/images/sunray1.png" 
                 alt="Brighter Opportunities icon featuring rising optimistic sun rays" 
                 fill
-                sizes="(max-width: 1024px) 280px, 320px"
+                sizes="(max-width: 640px) 90vw, (max-width: 1024px) 420px, 38vw"
                 className="object-contain p-2 transform group-hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -119,14 +119,14 @@ export default function OurFocusAreas() {
                 Brighter Opportunities
               </h3>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-md">
-                The sun rays represent optimism, hope, positivity, growth, enlightenment, and brighter opportunities tailored to individual strengths[cite: 1].
+                The sun rays represent optimism, hope, positivity, growth, enlightenment, and brighter opportunities tailored to individual strengths.
               </p>
             </div>
 
-            <div className="pt-8 w-full">
+            <div className="pt-8 w-full sm:w-auto">
               <Link 
                 href="/services" 
-                className="inline-flex w-full items-center justify-center bg-[#f37421] hover:bg-[#f68c1f] text-white font-medium text-sm sm:text-base px-6 py-3 rounded-xl transition-colors duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#f37421] focus:ring-offset-2"
+                className="inline-flex w-full sm:w-auto items-center justify-center bg-[#f37421] hover:bg-[#f68c1f] text-white font-medium text-sm sm:text-base px-6 py-3 rounded-lg transition-colors duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#f37421] focus:ring-offset-2"
               >
                 Read More
               </Link>

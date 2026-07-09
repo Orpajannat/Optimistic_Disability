@@ -271,7 +271,7 @@ export default function DonateVolunteer() {
     <section className="flex flex-col xl:flex-row items-stretch gap-10 container mx-auto px-5 lg:px-10 py-10">
 
       {/* Donate panel */}
-      <div className="bg-orange-100/30 flex flex-col gap-5 p-8 sm:p-10 rounded-lg w-full xl:w-1/2">
+      <div className="bg-orange-100/30 flex flex-col gap-5 p-8 sm:p-10 rounded-lg xl:w-1/2">
         <h2 className="text-lg md:text-xl text-black font-bold">Donate Now</h2>
         <div className="border-t-[3px] border-orange-400 rounded-full w-12" />
         <p className="text-sm text-neutral-500 max-w-md">
@@ -295,7 +295,7 @@ export default function DonateVolunteer() {
 
             <div className="border-2 border-slate-200 rounded-lg px-5 py-5 flex flex-col items-center gap-2 bg-white flex-1 pt-15">
               <Image src="/images/nagad-logo.png" alt="Nagad" width={110} height={40} className="h-10 w-auto"/>
-              <div className="text-left w-full">
+              <div className="text-left w-full pt-10">
                 <p className="text-neutral-500 text-sm">Number</p>
                 <p className="text-black font-medium">01111111111</p>
               </div>
@@ -472,7 +472,7 @@ export default function DonateVolunteer() {
 }
 
 const inputClass =
-  'p-2.5 w-full border border-slate-300 bg-white rounded-lg outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-shadow'
+  'p-2.5 w-full border border-slate-300 bg-white text-black rounded-lg outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-shadow'
 
 function Field({ label, required, children }) {
   const id = children.props.id

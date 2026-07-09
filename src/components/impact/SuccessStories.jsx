@@ -108,7 +108,7 @@ export default function SuccessStories() {
       <div className="absolute left-0 top-10 hidden h-28 w-20 bg-[radial-gradient(circle,#fb923c_2px,transparent_2px)] [background-size:18px_18px] opacity-20 md:block" />
       <div className="absolute bottom-10 right-0 hidden h-28 w-20 bg-[radial-gradient(circle,#fb923c_2px,transparent_2px)] [background-size:18px_18px] opacity-20 md:block" />
 
-      <div className="container relative z-10 mx-auto px-5 sm:px-8 max-w-7xl">
+      <div className="container relative z-10 mx-auto px-5 sm:px-8 max-w-10xl">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pb-12">
           <div className="space-y-2 text-center sm:text-left">
             <span className="text-[#f37421] text-xs font-bold uppercase tracking-widest">

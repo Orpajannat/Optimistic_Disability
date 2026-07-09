@@ -107,7 +107,7 @@ export default function Footer() {
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-8 lg:gap-x-12 xl:gap-x-16'>
  
           <div className='flex flex-col items-center sm:items-start gap-5 text-center sm:text-left'>
-            <Image src="/images/Hlogo.png" alt="logo" width={200} height={96} className='w-[160px] md:w-[190px] h-auto'/>
+            <Image src="/images/Flogo.png" alt="logo" width={200} height={96} className='w-[160px] md:w-[190px] h-auto'/>
             <p className='text-sm text-neutral-400 leading-relaxed max-w-xs'>
               Empowering individuals with disabilities through inclusion, opportunity and positive social change.
             </p>

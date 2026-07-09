@@ -159,7 +159,7 @@ const impactNumbers = [
 
 export default function ImpactInNumbers() {
   return (
-    <section className="container mx-auto px-5 py-14 sm:px-8 max-w-7xl">
+    <section className="container mx-auto px-5 py-14 sm:px-8 max-w-10xl">
       <div className="space-y-2 pb-12 text-center">
         <span className="text-[#f37421] text-xs font-bold uppercase tracking-widest">
           Our Impact In Numbers

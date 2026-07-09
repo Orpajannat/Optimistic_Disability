@@ -42,83 +42,65 @@ import React from 'react'
 import { Users, GraduationCap, HeartHandshake, MapPin } from 'lucide-react'
 
 export default function OurImpact() {
+  const impactMetrics = [
+    {
+      icon: Users,
+      value: '500+',
+      label: 'People Supported',
+    },
+    {
+      icon: GraduationCap,
+      value: '120+',
+      label: 'Training Programs',
+    },
+    {
+      icon: HeartHandshake,
+      value: '30+',
+      label: 'Partner Organizations',
+    },
+    {
+      icon: MapPin,
+      value: '10+',
+      label: 'Communities Served',
+    },
+  ]
+
   return (
-    <section className="py-16 md:py-20 bg-gradient-to-b from-orange-50/40 to-white border-y border-orange-100/50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        
-        {/* Section Heading */}
-        <div className="text-center space-y-2 mb-12 md:mb-16">
-          <h2 className="text-xs font-bold tracking-widest text-[#f37421] uppercase">
-            Our Metrics
-          </h2>
-          <p className="text-2xl sm:text-3xl font-semibold text-slate-900 tracking-tight">
-            The Impact of Optimistic Disability Services
-          </p>
-        </div>
-
-        {/* Impact Metrics Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-4 sm:gap-x-8 lg:gap-x-0 items-center text-center">
-          
-          {/* Metric 1: People Supported */}
-          <div className="flex flex-col items-center justify-center space-y-3 lg:border-r lg:border-slate-200/80 last:border-none">
-            <div className="p-3 bg-[#fdcb11]/10 rounded-2xl text-[#f37421]">
-              <Users className="w-8 h-8 md:w-10 md:h-10 stroke-[1.75]" />
+    <section className="py-14 sm:py-16 md:py-20 bg-gradient-to-b from-orange-50/40 to-white border-y border-orange-100/50 overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="lg:col-span-4 text-center lg:text-left space-y-3 max-w-xl mx-auto lg:mx-0">
+            <div className="inline-flex items-center gap-2 bg-[#fdcb11]/10 border border-[#fdcb11]/30 px-3 py-1 rounded-full">
+              <span className="w-2 h-2 rounded-full bg-[#f37421]"></span>
+              <h2 className="text-xs sm:text-sm font-semibold tracking-wide text-slate-800 uppercase">
+                Our Metrics
+              </h2>
             </div>
-            <div className="space-y-1">
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-slate-900">
-                500+
-              </h3>
-              <p className="text-xs sm:text-sm md:text-base font-medium text-slate-600">
-                People Supported
-              </p>
-            </div>
+            <p className="text-2xl sm:text-3xl md:text-4xl font-semibold text-slate-900 tracking-tight leading-tight">
+              The Impact of Optimistic Disability Services
+            </p>
           </div>
 
-          {/* Metric 2: Training Programs */}
-          <div className="flex flex-col items-center justify-center space-y-3 lg:border-r lg:border-slate-200/80 last:border-none">
-            <div className="p-3 bg-[#fdcb11]/10 rounded-2xl text-[#f37421]">
-              <GraduationCap className="w-8 h-8 md:w-10 md:h-10 stroke-[1.75]" />
-            </div>
-            <div className="space-y-1">
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-slate-900">
-                120+
-              </h3>
-              <p className="text-xs sm:text-sm md:text-base font-medium text-slate-600">
-                Training Programs
-              </p>
-            </div>
+          <div className="lg:col-span-8 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 text-center">
+            {impactMetrics.map(({ icon: Icon, value, label }) => (
+              <div
+                key={label}
+                className="group flex min-h-40 flex-col items-center justify-center space-y-3 rounded-2xl border border-slate-200/80 bg-white/80 px-3 py-6 shadow-sm shadow-slate-200/60 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-[#fdcb11]/60 hover:bg-white hover:shadow-xl hover:shadow-[#f37421]/10"
+              >
+                <div className="p-3 bg-[#fdcb11]/10 rounded-xl text-[#f37421] transition-all duration-300 group-hover:bg-[#f37421] group-hover:text-white group-hover:scale-110">
+                  <Icon className="w-8 h-8 md:w-10 md:h-10 stroke-[1.75]" />
+                </div>
+                <div className="space-y-1">
+                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 transition-colors duration-300 group-hover:text-[#f37421]">
+                    {value}
+                  </h3>
+                  <p className="text-xs sm:text-sm md:text-base font-medium text-slate-600">
+                    {label}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
-
-          {/* Metric 3: Partner Organizations */}
-          <div className="flex flex-col items-center justify-center space-y-3 lg:border-r lg:border-slate-200/80 last:border-none">
-            <div className="p-3 bg-[#fdcb11]/10 rounded-2xl text-[#f37421]">
-              <HeartHandshake className="w-8 h-8 md:w-10 md:h-10 stroke-[1.75]" />
-            </div>
-            <div className="space-y-1">
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-slate-900">
-                30+
-              </h3>
-              <p className="text-xs sm:text-sm md:text-base font-medium text-slate-600">
-                Partner Organizations
-              </p>
-            </div>
-          </div>
-
-          {/* Metric 4: Communities Served */}
-          <div className="flex flex-col items-center justify-center space-y-3 last:border-none">
-            <div className="p-3 bg-[#fdcb11]/10 rounded-2xl text-[#f37421]">
-              <MapPin className="w-8 h-8 md:w-10 md:h-10 stroke-[1.75]" />
-            </div>
-            <div className="space-y-1">
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-slate-900">
-                10+
-              </h3>
-              <p className="text-xs sm:text-sm md:text-base font-medium text-slate-600">
-                Communities Served
-              </p>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>

@@ -53,24 +53,27 @@ import Link from 'next/link'
 export default function AboutUs() {
   return (
     <section className="py-16 md:py-24 bg-gradient-to-b from-white to-slate-50/50 overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column: Narrative Content */}
-          <div className="lg:col-span-6 flex flex-col space-y-6 order-2 lg:order-1">
+          <div className="lg:col-span-7 flex flex-col justify-center items-start space-y-5 sm:space-y-6 md:space-y-8 max-w-xl lg:max-w-none order-2 lg:order-1">
             
-            <div className="space-y-2">
-              <h2 className="text-xs font-bold tracking-widest text-[#f37421] uppercase">
-                About Us
-              </h2>
-              <h3 className="text-3xl sm:text-4xl font-light text-slate-900 tracking-tight leading-tight">
+            <div className="space-y-3">
+              <div className="inline-flex items-center gap-2 bg-[#fdcb11]/10 border border-[#fdcb11]/30 px-3 py-1 rounded-full">
+                <span className="w-2 h-2 rounded-full bg-[#f37421]"></span>
+                <h2 className="text-xs sm:text-sm font-semibold tracking-wide text-slate-800 uppercase">
+                  About Us
+                </h2>
+              </div>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-light text-slate-900 tracking-tight leading-[1.15]">
                 Together, we Build <span className="font-bold text-[#f37421]">an inclusive future.</span>
               </h3>
             </div>
 
             {/* Image Container for Mobile/Tablet Viewports */}
-            <div className="lg:hidden relative w-full aspect-[4/3] sm:aspect-[16/10] my-4 bg-slate-100 rounded-2xl p-2 border border-slate-200">
-              <div className="relative w-full h-full">
+            <div className="lg:hidden relative w-full max-w-2xl aspect-[4/3] sm:aspect-[16/10] my-1 bg-white rounded-2xl p-2 border border-slate-200 shadow-lg shadow-slate-200/60">
+              <div className="relative w-full h-full rounded-xl overflow-hidden bg-slate-100">
                 <Image 
                   src="/images/facebook-optimum-01-06-26.jpg.jpeg" 
                   alt="Optimistic Disability team empowering individual progress and access" 
@@ -117,14 +120,10 @@ export default function AboutUs() {
           </div>
 
           {/* Right Column: Premium Uncropped Image Display for Desktops */}
-          <div className="hidden lg:block lg:col-span-6 order-1 lg:order-2 relative w-full">
-            {/* Elegant background color auras behind the photo structure */}
-            <div className="absolute -top-8 -left-8 w-64 h-64 bg-[#fdcb11]/20 rounded-full mix-blend-multiply filter blur-2xl opacity-70 pointer-events-none"></div>
-            <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-[#f37421]/15 rounded-full mix-blend-multiply filter blur-2xl opacity-70 pointer-events-none"></div>
-
-            {/* Match container to common uncropped landscape formats (4:3 or 16:10 aspect layout) */}
-            <div className="relative w-full aspect-[4/3] rounded-[2rem] p-4 bg-orange-400/80 shadow-2xl border border-slate-100 flex items-center justify-center">
-              <div className="relative w-full h-full rounded-xl overflow-hidden">
+          <div className="hidden lg:flex lg:col-span-5 order-1 lg:order-2 relative w-full items-center justify-center">
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#fdcb11]/20 to-[#f37421]/10 rounded-[2rem] rotate-3 transform scale-95 filter blur-sm"></div>
+            <div className="relative w-full aspect-[4/3] rounded-2xl p-3 bg-orange-100 shadow-2xl shadow-orange-300/60 border border-orange-100 z-10">
+              <div className="relative w-full h-full rounded-xl overflow-hidden bg-orange-100">
                 <Image 
                   src="/images/facebook-optimum-01-06-26.jpg.jpeg" 
                   alt="Optimistic Disability team empowering individual progress and access" 
